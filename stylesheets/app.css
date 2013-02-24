@@ -1,0 +1,131 @@
+/* Artfully masterminded by ZURB  */
+
+/* --------------------------------------------------
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Page Name 1
+:: Page Name 2
+*/
+
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+body {
+  font-size: 62.5%;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  line-height: 150%;
+  color: #777777;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', "Helvetica", sans-serif;
+  color: #555555;
+}
+
+.center {
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+}
+
+.right {
+  float: right;
+}
+
+.container a {
+  text-decoration: underline;
+}
+
+.label {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.orange {
+  background-color: orange;
+}
+
+#sticky-panel {
+  position: fixed;
+  bottom: 0px;
+  height: 200px;
+  width: 100%;
+  background-color: #000000;
+  opacity: 0.9;
+  padding: 20px;
+  filter: alpha(opacity=90); /* IE8 Opacity */
+}
+
+#sticky-panel img {
+  border: solid 4px white;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.panel-skill {
+  background-color: #FFFFFF;
+}
+
+.panel-title {
+  display: block;
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+#footer {
+  height: 200px;
+}
+
+/* -----------------------------------------
+   Library
+----------------------------------------- */
+.library-img {
+  margin-bottom: 15px;
+}
+
+.library-label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.library-label a {
+  text-decoration: none;
+}
+
+.library-title {
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+
+.library-row-spacer {
+  display: block;
+  margin-bottom: 60px;
+}
+
+a.button {
+  text-decoration: none;
+}
+
+
+
+/* -----------------------------------------
+   Skill Page
+----------------------------------------- */
+.skill {
+  border: 1px solid #EEEEEE;
+  padding: 10px;
+}
+
+.self {
+  border: 1px solid #CCCCCC;
+}
