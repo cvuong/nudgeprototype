@@ -9,7 +9,7 @@
   <!-- Set the viewport width to device width for mobile -->
   <meta name="viewport" content="width=device-width" />
 
-  <title></title>
+  <title>Group View</title>
 
   <!-- Included CSS Files (Uncompressed) -->
   <!--
@@ -38,18 +38,108 @@
   </nav>
 
   <div class="row container">
-    <div class="twelve rows">
+    <div class="twelve columns">
       <h1>Learn to cook</h1>
       <h3 class="subheader">Learn to cook with Gordon Ramsay</h3>.
       <div class="row">
-        <div class="three columns center skill self">
-          <h4>You</h4>
+        <div class="three columns skill">
+          <div class="inner-skill self">
+            <div class="skill-user center">
+              <img src="http://placehold.it/25x25" />
+              <strong>Charlie Vuong (you)</strong>
+            </div>
+            <h5>Action Steps
+              <a href="#" data-reveal-id="action-step-modal">
+                <span class="add-action-step">Add New</span>
+              </a>
+
+            </h5>
+            <ul class="group-action-steps">
+              <li>
+                Read Chapter 5 of Riding Rails
+                <div class="change-status">
+                  <div class="right">
+                    <span class="date">
+                      3/2/13</span>
+                    </div>
+                  <a class="button">I will start</a>
+                </div>
+                <div class="clear"></div>
+              </li>
+              <li>
+                Read Chapter 5 of Riding Rails
+
+                <ul class="group-nudges">
+                  <li><strong><a href="">David</a>,</strong> <strong><a href="">Rahul</a></strong> <strong>nudged</strong> you to complete this action step</li>
+                </ul>
+                <div class="change-status">
+                  <a class="button success">I'm done</a>
+                </div>
+              </li>
+            </ul>
+
+            <h5>Activity
+            </h5>
+
+            <ul class="group-activity">
+              <li>
+                Finished: Chapter 5 of Riding Rails
+                <div class="date">
+                  3/2/13
+                </div>
+                <div class="clear"></div>
+              </li>
+              <li>
+                Nudged Samuel to start: Reading Chapter 5 of Riding Rails
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="three columns skill">
+          <div class="inner-skill">
+            <div class="skill-user center">
+              <img src="http://placehold.it/25x25" />
+              Samuel Adams
+            </div>
+            <h5>Action Steps
+            </h5>
+            <ul class="group-action-steps">
+              <li>
+                Samuel will start: Read Chapter 5 of Riding Rails
+                <div class="change-status">
+                  <a class="secondary button">Nudge</a>
+                </div>
+                <div class="clear"></div>
+              </li>
+              <li>
+                Samuel has started: Read Chapter 5 of Riding Rails
+                <div class="change-status">
+                  <a class="secondary button">Nudge</a>
+                </div>
+                <div class="clear"></div>
+              </li>
+              <li>
+                Samuel has not started: Read Chapter 5 of Riding Rails
+                <div class="change-status">
+                  <a class="secondary button">Nudge</a>
+                </div>
+                <ul class="group-nudges">
+                  <li><strong><a href="">David</a>,</strong> <strong><a href="">Rahul</a></strong> <strong>nudged</strong> you to complete this action step</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="three columns center skill">
-          <h4>Harry Potter</h4>
+          <div class="inner-skill self">
+            <h4>You</h4>
+          </div>
         </div>
-        <div class="three columns center">col 3</div>
-        <div class="three columns center">col 4</div>
+        <div class="three columns center skill">
+          <div class="inner-skill self">
+            <h4>You</h4>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -88,6 +178,26 @@
   <div id="footer">
   </div>
 
+  <div id="action-step-modal" class="reveal-modal large">
+    <h3>Add Action Step</h3>
+    <ul class="button-group radius">
+      <li><a href="#" class="large button radius">Gordon Ramsay</a></li>
+      <li><a href="#" class="secondary large button radius">Fiuck Yu</a></li>
+      <li><a href="#" class="secondary large button radius">Fiuck Mi</a></li>
+      <li><a href="#" class="secondary large button radius">Samuel</a></li>
+      <li><a href="#" class="secondary large button radius">GG</a></li>
+    </ul>
+
+    <ul id="action-steps-in-modal">
+      <li>
+        <span class="has-tip tip-right" data-width="140" title="Click to commit">Take out the trash</span>
+      </li>
+      <li>Do the laundry</li>
+      <li>Get the groceries</li>
+    </ul>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+
 
   <!-- Included JS Files (Uncompressed) -->
   <!--
@@ -117,6 +227,8 @@
 
   <!-- Initialize JS Plugins -->
   <script src="javascripts/app.js"></script>
+  <script src="javascripts/jquery.foundation.reveal.js"></script>
+  <script src="javascripts/jquery.foundation.tooltips.js"></script>
 
 
     <script>

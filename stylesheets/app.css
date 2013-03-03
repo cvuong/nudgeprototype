@@ -4,8 +4,9 @@
    Table of Contents
 -----------------------------------------------------
 :: Shared Styles
-:: Page Name 1
-:: Page Name 2
+:: Footer
+:: Library
+:: Group
 */
 
 
@@ -16,7 +17,7 @@ body {
   font-size: 62.5%;
   font-family: 'Open Sans', 'Arial', sans-serif;
   line-height: 150%;
-  color: #777777;
+  color: #555555;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,6 +31,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .row {
   width: 100%;
+}
+
+.right {
+  text-align: right;
+}
+
+.container {
+  width: 1400px;
+  padding: 0 20px;
+}
+
+.clear {
+  clear: both;
 }
 
 .right {
@@ -49,6 +63,29 @@ h1, h2, h3, h4, h5, h6 {
 .orange {
   background-color: orange;
 }
+
+/* -----------------------------------------
+   Login
+----------------------------------------- */
+#account-form {
+  margin: 20px auto;
+  text-align: center;
+  width: 500px;
+}
+
+#account-form h1 {
+  font-size: 56px;
+}
+
+#account-form h2 {
+  font-size: 32px;
+}
+
+
+
+/* -----------------------------------------
+   Footer
+----------------------------------------- */
 
 #sticky-panel {
   position: fixed;
@@ -119,13 +156,116 @@ a.button {
 
 
 /* -----------------------------------------
-   Skill Page
+   Group
 ----------------------------------------- */
 .skill {
-  border: 1px solid #EEEEEE;
-  padding: 10px;
+  padding: 5px;
+  width: 300px;
 }
 
-.self {
+.inner-skill {
+  border: 1px solid #AAAAAA;
+}
+
+.skill-user {
+  padding: 15px 15px 15px 0px;
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #AAAAAA;
+  font-size: 24px;
+  color: #555555;
+}
+
+.skill-user img {
+  vertical-align: middle;
+}
+
+.skill-info {
+  padding: 15px;
+}
+
+.inner-skill h5 {
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+ul.group-action-steps {
+  margin: 0;
+  list-style: none;
+}
+
+ul.group-action-steps li {
+  position: relative;
+  padding: 10px;
+  font-size: 20px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+ul.group-nudges {
+  margin: 0;
+  list-style: none;
+}
+
+ul.group-nudges li {
+  font-size: 18px;
+  border-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+ul.group-activity {
+  margin: 0;
+  list-style: none;
+}
+
+ul.group-activity li {
+  position: relative;
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.inner-skill .button {
+  right: 0;
+}
+
+.change-status {
+  margin-top: 10px;
+}
+
+.date {
+  margin-top: 5px;
+  color: #888888;
+  text-align: right;
+}
+
+.add-action-step {
+  float: right;
+}
+
+/* -----------------------------------------
+   Action Step Modal
+----------------------------------------- */
+#action-step-modal h3 {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+#action-steps-in-modal {
+  margin: 0;
+  list-style: none;
+}
+
+#action-steps-in-modal li {
+  cursor: pointer;
+  font-size: 24px;
+  background-color: #F5F5F5;
   border: 1px solid #CCCCCC;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#action-steps-in-modal li span {
+  cursor: pointer;
+  font-weight: normal;
 }
